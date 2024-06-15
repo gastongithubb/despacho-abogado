@@ -1,0 +1,161 @@
+/* Estilos CSS personalizados */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth; /* Animación suave al desplazar */
+}
+
+.navbar {
+    background-color: #343a40 !important;
+    transition: top 0.3s; /* Transición suave para mostrar y ocultar */
+    top: 0; /* Posición inicial */
+    position: fixed; /* Posición fija */
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.header {
+    background: url('img/bg-header.png') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    color: #343a40;
+}
+
+.service-item p {
+    font-size: 0.95rem;
+}
+
+.contact {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.contact h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 30px; /* Margen inferior para separar del contenido */
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.contact p {
+    font-size: 1.1rem;
+}
+
+.carousel-item {
+    height: 400px;
+    background: url('img/item2.png') no-repeat center center/cover;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos para el menú hamburguesa */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon::before, .navbar-toggler-icon::after {
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: -6px;
+}
+
+.navbar-toggler-icon::after {
+    top: 6px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: transparent;
+}
+
+/* Botón de regreso al inicio */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
